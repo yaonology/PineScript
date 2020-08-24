@@ -1,0 +1,23 @@
+//Step One: Initial Setting
+//@version=4
+strategy("Yaonology Moving Average Tutoring", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commission_value = 0)
+
+//Step Two: Parameter Setting
+fst = input(title = 'fast parameter', defval = 40) //Define fast parameter as 40 days trading periods
+slw = input(title = 'slow parameter', defval = 150) //Define slow parameter as 150 days trading periods
+
+ma_fast = sma(close, fst) //Define ma_fast as 40 days simple moving average
+ma_slow = sma(close, slw) //Define ma_slow as 150 days simple moving average
+
+//Step Three: Plot
+plot(ma_fast, color = color.red) //Plot 40 days simple moving average on the chart
+plot(ma_slow, color = color.green) //Plot 150 days simple moving average on the chart
+
+//Step Four: Strategy Entry and Strategy Close
+if ma_fast > ma_slow // Buying Points: 40 days simple moving average higher than 150 days simple moving average
+    strategy.entry(id = 'ma_buy', long = true)
+
+
+if ma_fast < ma_slow // Selling Points: 40 days simple moving average lower than 150 days simple moving average
+    strategy.close(id = 'ma_buy')
+    
