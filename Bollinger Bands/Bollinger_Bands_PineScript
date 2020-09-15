@@ -1,0 +1,22 @@
+//Step One: Initial Setting
+//@version=4
+strategy("Yaonology Bollinger Bands Tutoring", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commission_value = 0)
+
+//Step Two: Parameter Setting
+ma_20 = sma(close, 20) // 20 trading days simple moving average
+std = stdev(close, 20) // 20 trading days standard deviation
+
+upper_band = ma_20 + 2*std // upper_band 20 trading days moving average plus 2 standard deviation
+lower_band = ma_20 - 2*std // lower_band 20 trading days moving average minus 2 standard deviation
+
+//Step Three: Plot
+plot(ma_20, color = color.green) //Plot 20 days simple moving average on the chart
+plot(upper_band, color = color.red) //Plot upper_band
+plot(lower_band, color = color.red) //Plot lower_band
+
+//Step Four: Strategy Entry and Strategy Close
+if close[1] < lower_band[1] and close > lower_band
+    strategy.entry(id = 'bb', long = true)
+
+if close[1] > upper_band[1] and close < upper_band
+    strategy.close(id = 'bb')
