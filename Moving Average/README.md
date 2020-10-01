@@ -30,7 +30,7 @@ Bull Trend:
 
 Bear Trend:
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/bear trend.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/bear_trend.png)
 
 However, we need to point out the Simple Moving Average is a lagging indicator, which means the indicator helps us determine the trend after the price changes. Thus, the indicator mainly helps us in validating the trend, not predicting the trend.
 
