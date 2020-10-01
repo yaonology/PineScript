@@ -10,12 +10,16 @@ In finance, a moving average (MA) is a stock indicator that is commonly used in 
 For example, we can introduce the simple moving average(SMA) first.
 ![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/SMA.png)
 The period can be any positive integer. There are three different ranges.
+
 – Short-term: The period will be from 5 to 30.
+
 – Middle-term: The period will be from 30 to 150.
+
 – Long-term: The period will be from 150 to 250. 
 
 ### 2. How to use Simple Moving Average
 · Determine the trend
+
 Based on the formula, Simple Moving Average you can see as “The average cost of investors buying the stock in the past number period.” Following this concept, we can determine the stock trend based on the Simple Moving Average.
 
 Simply put, when the simple moving average is going up, we can say that market is experiencing a Bull Trend. When the simple moving average is dropping down, the market is undergoing a Bear Trend.
