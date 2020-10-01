@@ -68,7 +68,43 @@ When the short-term simple moving average crosses under the long-term simple mov
 (5) The in-depth Simple Moving Average is “Short/Middle-term Simple Moving Average crosses and Long-term Simple Moving Average is on the long-term bull trend.”
 (6) This strategy considers the Short-term, Middle-term, and Long-term. It uses the long-term Simple Moving Average to determine the long-term bull trend and then uses the short-term and middle-term to find the buying point and selling points. It can remove the fake signal when the stock is in the long-term bull trend.
 
+### 4. Pine Script Examples
+#### · Initial Settings
 
+(1) Step one initial setting is the step we set up the strategy property, which includes “Strategy ID,” “The plot overlays the main chart or show on the separate chart pane. ”, “How much is the initial capital,” “How many percentages of capital buying the equity?”, “How much is the commission fee.”
 
+(2) First, we need to set up the Pine Script version. Here, we are using the last version, version four.
 
+(3) Then, we start to code the strategy property. The double quote we type “Yaonology Moving Average Tutoring,” which is the strategy id.
 
+(4) “overlay equals true” means that the plot overlays the main chart. On the other hand, if “overlay equals false,” it means that the scheme will show on the separate chart pane.
+
+(5) Then, we set up the initial capital, here, we code “initial_capital equals 10000” and “currency = currency.USD”, which means that we are using US$10000 as the initial capital
+
+(6) Then, we need to determine how many shares we trade equities. Here, we code “default_qty_type equals strategy.percent_of_equity” and “default_qty_value equals a hundred,” which means that we are using the percentage type to trade the equity, and we use 100 percent of capital to buy the stakes.
+
+(7) Finally, we set up the commission fee. Here, we code “commission_type equals strategy.commission.percent” and “commission_value = 0”, which means that we use the percentage type to calculate the commission fee, and here we set up 0% commission fee because most brokers don’t charge the commission fee currently.
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_1.png)
+
+Then, we will try these three algorithms in pine script and do the backtesting.
+
+a. Close price above/below Simple Moving Average
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_2.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_1.png)
+
+b. Short-term/Middle-term Simple Moving Average Crosses
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_3.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_2.png)
+
+c. Short-term/Middle-term Simple Moving Average Cross and Long-term Simple Moving Average is on the long-term bull trend
+
+(5) The in-depth Simple Moving Average is “Short/Middle-term Simple Moving Average crosses and Long-term Simple Moving Average is on the long-term bull trend.”
+(6) This strategy considers the Short-term, Middle-term, and Long-term. It uses the long-term Simple Moving Average to determine the long-term bull trend and then uses the short-term and middle-term to find the buying point and selling points. It can remove the fake signal when the stock is in the long-term bull trend.
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_4.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_3.png)
+
+d. Strategy Optimization
+
+· Write a simple python iteration to decide the most profitable period.
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_4.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_5.png)
