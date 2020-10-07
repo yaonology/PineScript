@@ -9,7 +9,13 @@ In finance, a moving average (MA) is a stock indicator that is commonly used in 
 
 For example, we can introduce the simple moving average(SMA) first.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/SMA.png)
+SMA = (A_1 + A_2 +...+ A_n)/n
+
+where:
+
+A = average in period n
+
+n = number of time periods
 
 The period can be any positive integer. There are three different ranges.
 
