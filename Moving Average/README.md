@@ -92,21 +92,53 @@ When the short-term simple moving average crosses under the long-term simple mov
 
 (7) Finally, we set up the commission fee. Here, we code “commission_type equals strategy.commission.percent” and “commission_value = 0”, which means that we use the percentage type to calculate the commission fee, and here we set up 0% commission fee because most brokers don’t charge the commission fee currently.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_1.png)
+//Step One: Initial Setting
+//@version = 4
+strategy("Yaonology Moving Average Tutoring", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commision_value = 0)
 
 Then, we will try these three algorithms in pine script and do the backtesting.
 
 a. Close price above/below Simple Moving Average
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_2.png)
+//Step Two: Parameter Setting
+fst = input(title = "MA_Fast", defval = 20)
+slw = input(title = "MA_Slow", defval = 40)
+ma_fast = sma(close, fst)
+ma_slow = sma(close, slw)
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_1.png)
+//Step Three: Plot
+plot(ma_fast, color = color.blue)
+plot(ma_fast, color = color.green)
+
+//Step Four: Strategy Application
+if close > ma_fast
+    strategy.entry(id = "ma_long", long = true)
+    
+if ma_fast > close
+    strategy.close(id = "ma_long")
+
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_a.png)
 
 b. Short-term/Middle-term Simple Moving Average Crosses
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_3.png)
+//Step Two: Parameter Setting
+fst = input(title = "MA_Fast", defval = 20)
+slw = input(title = "MA_Slow", defval = 40)
+ma_fast = sma(close, fst)
+ma_slow = sma(close, slw)
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_2.png)
+//Step Three: Plot
+plot(ma_fast, color = color.blue)
+plot(ma_fast, color = color.green)
+
+//Step Four: Strategy Application
+if ma_fast > ma_slow
+    strategy.entry(id = "ma_long", long = true)
+    
+if ma_slow > ma_fast
+    strategy.close(id = "ma_long")
+
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_b.png)
 
 c. Short-term/Middle-term Simple Moving Average Cross and Long-term Simple Moving Average is on the long-term bull trend
 
@@ -114,14 +146,22 @@ c. Short-term/Middle-term Simple Moving Average Cross and Long-term Simple Movin
 
 (6) This strategy considers the Short-term, Middle-term, and Long-term. It uses the long-term Simple Moving Average to determine the long-term bull trend and then uses the short-term and middle-term to find the buying point and selling points. It can remove the fake signal when the stock is in the long-term bull trend.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/pine_4.png)
+//Step Two: Parameter Setting
+fst = input(title = "MA_Fast", defval = 20)
+slw = input(title = "MA_Slow", defval = 40)
+ma_fast = sma(close, fst)
+ma_slow = sma(close, slw)
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_3.png)
+//Step Three: Plot
+plot(ma_fast, color = color.blue)
+plot(ma_fast, color = color.green)
 
-d. Strategy Optimization
+//Step Four: Strategy Application
+if ma_slow > ma_slow[1]
+    if ma_fast > ma_slow
+        strategy.entry(id = "ma_long", long = true)
+    
+if ma_slow > ma_fast
+    strategy.close(id = "ma_long")
 
-· Write a simple python iteration to decide the most profitable period.
-
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_4.png)
-
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/result_5.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_c.png)
