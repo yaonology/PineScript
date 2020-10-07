@@ -173,7 +173,9 @@ a. Percent B Strategy
     
     if pb[1] > 100 and pb < 100
         strategy.close(id = "BB_buy")
-        
+
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Strategy_Percent_B_Outcome.png)        
+
 b. Percent B Strategy with Long-term Simple Moving Average
 
 (1) The second strategy is combing Percent B Strategy with Long-term Simple Moving Average. If the previous Percent B is smaller than 0 and the percent B today is greater than 0 and the 200-day simple moving average is growing, we take it as a buying point.
@@ -200,7 +202,7 @@ c. Percent B and Middle-term/Long-term Simple Moving Average Strategy
     if clp > upr and sma(close, 200) > sma(close, 60)
         strategy.close(id = "BOLL1")
 
-
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Strategies_Outcome_Comparison.png)
 
 
 
