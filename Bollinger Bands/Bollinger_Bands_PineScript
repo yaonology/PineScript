@@ -3,20 +3,27 @@
 strategy("Yaonology Bollinger Bands Tutoring", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commission_value = 0)
 
 //Step Two: Parameter Setting
-ma_20 = sma(close, 20) // 20 trading days simple moving average
-std = stdev(close, 20) // 20 trading days standard deviation
+mdl = sma(close, 20) // 20 trading days simple moving average
+dev = stdev(close, 20) // 20 trading days standard deviation
 
-upper_band = ma_20 + 2*std // upper_band 20 trading days moving average plus 2 standard deviation
-lower_band = ma_20 - 2*std // lower_band 20 trading days moving average minus 2 standard deviation
+upr = mdl + 2*dev // upper_band 20 trading days moving average plus 2 standard deviation
+lwr = mdl - 2*dev // lower_band 20 trading days moving average minus 2 standard deviation
+
+pb = (close - lwr)*100/upr - lwr) //Percent B
+bbw = (upr - lwr)*100/mdl //Bollinger Bands Width
 
 //Step Three: Plot
-plot(ma_20, color = color.green) //Plot 20 days simple moving average on the chart
-plot(upper_band, color = color.red) //Plot upper_band
-plot(lower_band, color = color.red) //Plot lower_band
+plot(mdl, color = color.green) //Plot 20 days simple moving average on the chart
+p1 = plot(upr, color = color.red) //Plot upper_band
+p2 = plot(lwr, color = color.red) //Plot lower_band
+fill(p1,p2)
+
+//plot(pb, color = color.blue) // Plot Percent B
+//plot(bbw, color = color.blue) // Plot Bollinger Bands Width
 
 //Step Four: Strategy Entry and Strategy Close
-if close[1] < lower_band[1] and close > lower_band
+if close[1] < lwr[1] and close > lwr
     strategy.entry(id = 'bb', long = true)
 
-if close[1] > upper_band[1] and close < upper_band
+if close[1] > upr[1] and close < upr
     strategy.close(id = 'bb')
