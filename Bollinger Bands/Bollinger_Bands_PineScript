@@ -9,7 +9,7 @@ dev = stdev(close, 20) // 20 trading days standard deviation
 upr = mdl + 2*dev // upper_band 20 trading days moving average plus 2 standard deviation
 lwr = mdl - 2*dev // lower_band 20 trading days moving average minus 2 standard deviation
 
-pb = (close - lwr)*100/upr - lwr) //Percent B
+pb = (close - lwr)*100/(upr - lwr) //Percent B
 bbw = (upr - lwr)*100/mdl //Bollinger Bands Width
 
 //Step Three: Plot
