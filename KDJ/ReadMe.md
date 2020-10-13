@@ -11,7 +11,9 @@ RSV = (Close price - Lowest price in the past 9 period)/(Highest price in 9 peri
 
 K equals two-third of previous K value plus one-third rsv
 K = 2/3 * K[1] + 1/3 * RSV
+
 D equals two-third of pervious D value plus one-third rsv
 D = 2/3 * D[1] + 1/3 * RSV
+
 J equals 3 times K minus 2 times D.
 J = 3 * K - 2 * D
