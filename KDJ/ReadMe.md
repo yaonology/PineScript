@@ -21,19 +21,19 @@ J equals 3 times K minus 2 times D.
 
 J = 3 * K - 2 * D
 
-2. What does the KDJ Stochastic Oscillator tell you? 
+# 2. What does the KDJ Stochastic Oscillator tell you? 
 
-# · Momentum Concept
+## · Momentum Concept
 
 KD is the momentum indicator, K and D would be always between 0 and 100. J would be over the range of 0 to 100.
 
 Here, we take an example. If the highest price in the past 9 bars is $50, close price is $36, and the lowest price in the past 9 bars is $20, rsv would be 53.33
 
-图片
+Picture
 
 Then, based on the rsv value, we can calculate K and D value
 
-# 2. Overbought and Oversold
+## · Overbought and Oversold
 
 When the K and D value are both below 20, the stock price might be oversold. During the oversold area, if the K crossover D, it’s called gold cross, which means that the stock price is oversold and the stock price starts to rebound.
 
@@ -43,13 +43,23 @@ When the J is below 0, the stock price also might be oversold. During the overso
 
 When the K is over 100, the stock price might be overbought. During the overbought area, if the J crossunder 100, it’s also means the death-cross.
 
-图片
+Picture
 
 # 3. KDJ Stochastic Oscillator Strategy
 
-# · KD Crossover and Crossunde
+## · KD Crossover and Crossunde
 
 We can use the crosses to identify the best time to enter or exit the market. When we observe a gold cross when K and D are in oversold area, we buy the stock as the price will rebound soon. On the other hand, when we see a death cross in overbought area, we sell the stock as the price has reached it peak and will drop soon
+
+Picture
+
+## · J Crossover and Crossunder
+
+We can also use J line to tell the oversold and overbought areas.
+When J line is below 0, the stock is oversold; when the line is above 100, the stock is overbought.
+When J crosses over 0 from below, we buy stock as the price will begin to rise soon; when J crosses 100 from above, we sell stock as the price will start to decrease.
+
+Picture
 
 
 
