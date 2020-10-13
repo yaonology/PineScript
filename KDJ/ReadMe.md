@@ -1,4 +1,4 @@
-1. #What is the KDJ Stochastic Oscillator?
+1.What is the KDJ Stochastic Oscillator?#
 
 KDJ Stochastic Oscillator is a technical analysis tool developed by George Lane.
 The KDJ is a momentum indicator, first developed in the 1950s. The original Stochastic Oscillator just has two lines, K and D. Today, KDJ we introduce is slightly different from the first version. There are three lines that compose KDJ Stochastic Oscillator: K, D and J. The J-line, in turn, represents the divergence of the D value from the K. The convergence of these lines will hint at emerging trading opportunities.
