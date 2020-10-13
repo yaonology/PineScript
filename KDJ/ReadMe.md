@@ -1,4 +1,4 @@
-1. What is the KDJ Stochastic Oscillator?
+#1. What is the KDJ Stochastic Oscillator?
 
 KDJ Stochastic Oscillator is a technical analysis tool developed by George Lane.
 The KDJ is a momentum indicator, first developed in the 1950s. The original Stochastic Oscillator just has two lines, K and D. Today, KDJ we introduce is slightly different from the first version. There are three lines that compose KDJ Stochastic Oscillator: K, D and J. The J-line, in turn, represents the divergence of the D value from the K. The convergence of these lines will hint at emerging trading opportunities.
@@ -22,10 +22,25 @@ J equals 3 times K minus 2 times D.
 J = 3 * K - 2 * D
 
 2. What does the KDJ Stochastic Oscillator tell you? 
+
 · Momentum Concept
+
 KD is the momentum indicator, K and D would be always between 0 and 100. J would be over the range of 0 to 100.
 
 Here, we take an example. If the highest price in the past 9 bars is $50, close price is $36, and the lowest price in the past 9 bars is $20, rsv would be 53.33
+
 图片
+
 Then, based on the rsv value, we can calculate K and D value
+
+2. Overbought and Oversold
+
+When the K and D value are both below 20, the stock price might be oversold. During the oversold area, if the K crossover D, it’s called gold cross, which means that the stock price is oversold and the stock price starts to rebound.
+
+When the K and D value are both over 80, the stock price might be overbought. During the overbought area, if the K crossunder D, it’s called death cross, which means that the stock price is overbought and the stock price starts to turn down.
+
+When the J is below 0, the stock price also might be oversold. During the oversold area, if the J crossover 0, it’s also means the golden-cross
+
+When the K is over 100, the stock price might be overbought. During the overbought area, if the J crossunder 100, it’s also means the death-cross.
+
 
