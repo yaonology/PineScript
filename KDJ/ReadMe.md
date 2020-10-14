@@ -83,6 +83,8 @@ Picture
 
 ### · Step Two: Parameter Setting
 
+![](2.png)
+
 (1) Step Two Parameter Setting is the step we set up the KDJ parameter. 
 
 (2) The highest function returns the highest value of a given set of numbers. High means the highest price of the day, and 9 means the 9 bars period.
@@ -116,6 +118,8 @@ It’s very similar to the line we just spend some time talking about.
 
 ### · Step Three: Plotting
 
+![](3.png)
+
 (1) Now let’s plot what we just calculated.
 
 (2) We first plot the k line. Plot brackets k comma color equals color dot green means we will be plotting k line in green.
@@ -125,6 +129,8 @@ It’s very similar to the line we just spend some time talking about.
 ### · Step Four: Strategy Entry and Strategy Close
 
 ####      * KD Crossover and Crossunder
+
+![](4.png)
 
 (1) In the previous section, we discussed in theory how to pick buying and selling points with KDJ indicators. Here, we are replicating the strategy by pine script.
 
