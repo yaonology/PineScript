@@ -79,7 +79,7 @@ Picture
 
 (7) Finally, we set up the commission fee. Here, we code “commision_type equals strategy.commission.percent” and “commission_value = 0”, which means that we use the percentage type to calculate the commission fee, and here we set up 0% commission fee because most brokers don’t charge the commission fee currently.
 
-
+![](1.jpg)
 
 ### · Step Two: Parameter Setting
 
