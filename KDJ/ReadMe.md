@@ -150,6 +150,8 @@ It’s very similar to the line we just spend some time talking about.
 
 (9) Also, we don’t need the long equals true part anymore, as we are selling, or shorting, not longing the stock any more.
 
+![](5.png)
+
 
 
 
