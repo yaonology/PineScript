@@ -152,6 +152,53 @@ It’s very similar to the line we just spend some time talking about.
 
 ![](5.png)
 
+This is the historical cumulative result we get by applying KD strategy only to SPY data.
 
+####      * KD Crossover and Crossunder and J Crossover and Crossunder
 
+![](6.png)
+
+![](7.png)
+
+(1) Now let’s combine our KD strategy and J strategy together
+
+(2) we now define our buying condition as the following: if we see a golden cross in oversold area indicated by k and d line, or we see j line going from negative value to positive value, we buy the stock
+
+(3) on the other hand, if we see a death cross in overbought area indicated by k and d line, or se wee j line goes negative from positive, we sell the stock
+
+(4) by adding j strategy, we observe a significant increase in net profit. It shows you the magic of strategy combination!
+
+####      * KD Against the Market
+
+![](8.png)
+
+![](9.png)
+
+(1) We may use KD strategy against the market.
+
+(2) In the past, we use k and d lines to forecast the coming reversion of price trends.
+
+(3) Now, we use the two lines to catch the current trend. We buy stock when both k and d move beyond 80, which means the stock just enters overbought area, and the price is currently rising
+
+(4) On the other hand, we sell the stock when both k and d goes below 20, which means the stock just enters oversold area and the price has just began to fall quickly.
+
+(5) By trading in this way, we are simply following the trend by buying the stock as the price starts to rise, and sell it when price starts to fall
+
+(6) Remember, KDJ indicators only indicate the strength of price trend, not market price itself. It is totally possible that after the stock goes from overbought to oversold area its market price is still higher comparing to the price before it goes into overbought area
+
+(7) In fact, the KD strategy against the market ends up more profitable
+
+####      * KD Against the Market with J crossover and crossunder
+
+![](10.png)
+
+![](11.png)
+
+We apply the same logic and combine j indicator. Again, the profit is even higher with three indicators combined and against the market
+
+####      * KD Against the Market in the Long-term Bull Trend (200-SMA) with J crossover and crossunder
+
+![](12.png)
+
+![](13.png)
 
