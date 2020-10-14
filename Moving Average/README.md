@@ -1,3 +1,5 @@
+[![Yaonology Trading Algorithm Moving Average Code-along Tutorial | PineScript TradingView | 移動平均線](https://res.cloudinary.com/marcomontalbano/image/upload/v1602714466/video_to_markdown/images/youtube--WaL5Q44w1aQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=WaL5Q44w1aQ&feature=youtu.be "Yaonology Trading Algorithm Moving Average Code-along Tutorial | PineScript TradingView | 移動平均線")
+
 # Best Way to Use Moving Average as Trading Strategies
 Trend analysis is a technique used in technical analysis that attempts to predict the future stock price movements based on recently observed trend data. Trend analysis is based on the idea that what has happened in the past gives traders an idea of what will happen in the future. Moving average indicator is one of the most commonly-used trend indicators.
 
