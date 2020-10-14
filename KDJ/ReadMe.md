@@ -129,11 +129,17 @@ It’s very similar to the line we just spend some time talking about.
 (2) We use the if statements to tell the system when to buy and when to sell. If k is smaller than 20 and d is smaller than 20 and k is larger than d and k square brackets 1 is smaller than d square brackets 1 are the conditions of buying the stock. Remember, we buy when observing a golden cross in oversold area, which is when both k line and d line are below 20. We are doing the same thing here by saying k smaller than 20 and d smaller than 20.
 
 (3) Then, we define what a golden cross is. A golden cross is when k line crosses d line from below. That is, yesterday’s k value is smaller than yesterday’s d value, but today’s k value is larger than today’s d value. This is the part of k larger than d and k square brackets 1 smaller than d square brackets 1.
+
 (4) When all these conditions are met, we tell the system to buy stock. Strategy dot entry brackets id equals quote kd comma long equals true is the expression we use to buy the stock. Id equals quote kd means whenever a transactions happens there will be a small label called kd beside it.
+
 (5) Long equals true means we are buying the stock when the conditions above are met
+
 (6) Remember, you must press tab before all lines to be executed by if statement.
+
 (7) Next, we define when to sell the stock. We sell when observing a death cross in overbought area, where both k and d line are above 80. A death cross is when k line crosses d line from above, which means yesterday’s k value is larger than d value, and today’s k value is smaller than d value. 
+
 (8) Strategy dot close brackets id equals quote id means we are telling the system to sell the stock when conditions mentioned above are met. Again, we add a label called kd to each selling transaction happens. Remember, the id under buying instruction and selling instruction must match, otherwise there’ll be an error.
+
 (9) Also, we don’t need the long equals true part anymore, as we are selling, or shorting, not longing the stock any more.
 
 
