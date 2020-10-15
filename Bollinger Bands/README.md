@@ -174,7 +174,8 @@ a. Percent B Strategy
     if pb[1] > 100 and pb < 100
         strategy.close(id = "BB_buy")
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Strategy_Percent_B_Outcome.png)        
+|                    | Net Profit | Percent Profitable | Profit Factor | Max Drawdown |
+| Percent B Strategy |  397.27%   |        86.11%      |     3.306     |    34.37%    |     
 
 b. Percent B Strategy with Long-term Simple Moving Average
 
