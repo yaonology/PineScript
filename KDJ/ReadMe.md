@@ -146,7 +146,12 @@ It’s very similar to the line we just spend some time talking about.
 
 ####      * KD Crossover and Crossunder
 
-![](4.png)
+    //Step Four: Strategy Entry and Strategy Close
+    if (k < 20 and d < 20 and k > d and k[1] < d[1])
+        strategy.entry(id= "kd", long = true)
+        
+    if (k > 80 and d > 80 and k < d and k[1] > d[1])
+        strategy.close(id= "kd")
 
 (1) In the previous section, we discussed in theory how to pick buying and selling points with KDJ indicators. Here, we are replicating the strategy by pine script.
 
@@ -166,7 +171,10 @@ It’s very similar to the line we just spend some time talking about.
 
 (9) Also, we don’t need the long equals true part anymore, as we are selling, or shorting, not longing the stock any more.
 
-![](5.png)
+| --- | Net Profit | Precent Profitable | Profit Factor | Max Drawdown | 
+| --- | --- | ---| --- | --- |
+| KD Crossover and Crossunder | 15.96% | 72.73% | 1.369 | 26.98% |
+
 
 This is the historical cumulative result we get by applying KD strategy only to SPY data.
 
