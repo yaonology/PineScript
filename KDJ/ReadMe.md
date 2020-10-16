@@ -180,9 +180,17 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 ####      * KD Crossover and Crossunder and J Crossover and Crossunder
 
-![](6.png)
+    //Step Four: Strategy Entry and Strategy Close
+    if (k < 20 and d < 20 and k > d and k[1] < d[1]) or (j > 0 and j[1] < 0)
+        strategy.entry(id= "kd", long = true)
+        
+    if (k > 80 and d > 80 and k < d and k[1] > d[1]) or (j < 100 and j[1] > 100)
+        strategy.close(id= "kd")
 
-![](7.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
 
 (1) Now let’s combine our KD strategy and J strategy together
 
@@ -194,9 +202,18 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 ####      * KD Against the Market
 
-![](8.png)
+    //Step Four: Strategy Entry and Strategy Close
+    if (k > 80 and d > 80)
+        strategy.entry(id= "kd", long = true)
+        
+    if (k < 20 and d < 20)
+        strategy.close(id= "kd")
 
-![](9.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
+| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
 
 (1) We may use KD strategy against the market.
 
@@ -214,15 +231,48 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 ####      * KD Against the Market with J crossover and crossunder
 
-![](10.png)
+    //Step Four: Strategy Entry and Strategy Close
+    if (k > 80 and d > 80)
+        strategy.entry(id= "kd", long = true)
+        
+    if (k < 20 and d < 20)
+        strategy.close(id= "kd")
+        
+    if (j > 0 and j[1] < 0)
+        strategy.entry(id= "j", long = true)
+        
+    if (j < 100 and j[1] > 100)
+        strategy.close(id= "j")
 
-![](11.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
+| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
+| **KD Against the Market with J Crossover and Crossunder** | **425.83%** | **64.38%** | **2.132** | **51.63%** |
 
 We apply the same logic and combine j indicator. Again, the profit is even higher with three indicators combined and against the market
 
 ####      * KD Against the Market in the Long-term Bull Trend (200-SMA) with J crossover and crossunder
 
-![](12.png)
+    //Step Four: Strategy Entry and Strategy Close
+    if (k > 80 and d > 80) and sma(close, 200) > sma(close, 200)[1]
+        strategy.entry(id= "kd", long = true)
+        
+    if (k < 20 and d < 20)
+        strategy.close(id= "kd")
+        
+    if (j > 0 and j[1] < 0)
+        strategy.entry(id= "j", long = true)
+        
+    if (j < 100 and j[1] > 100)
+        strategy.close(id= "j")
 
-![](13.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
+| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
+| **KD Against the Market with J Crossover and Crossunder** | **425.83%** | **64.38%** | **2.132** | **51.63%** |
+| **KD Against the Market with Bull Trend J Crossover and Crossunder** | **491.19%** | **66.27%** | **2.164** | **35.02%** |
 
