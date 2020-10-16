@@ -79,12 +79,25 @@ Picture
 
 (7) Finally, we set up the commission fee. Here, we code “commision_type equals strategy.commission.percent” and “commission_value = 0”, which means that we use the percentage type to calculate the commission fee, and here we set up 0% commission fee because most brokers don’t charge the commission fee currently.
 
-![](1.png)
+    //version = 4
+    strategy("Yaonology KDJ Indicators Tutorial", overlay=false,
+    default_qty_type = strategy.percent_of_equity, default_qty_value = 100,
+    currency = currency.USD, initial_capital = 10000,
+    commission_type = strategy.commission.percent, commission_value = 0)
 
 ### · Step Two: Parameter Setting
 
-![](2.png)
-
+    //Step Two: Parameter Setting
+    hgst = highest(high, 9)
+    lwst = lowest(low, 9)
+    rsv = (close - lwst)*100 / (hgst - lwst)
+    
+    k = 0.0
+    d = 0.0
+    k := (rsv + 2 * nz(k[1]))/3
+    d := (k + 2 * nz(d[1]))/3
+    j = 3*k - 2*d
+    
 (1) Step Two Parameter Setting is the step we set up the KDJ parameter. 
 
 (2) The highest function returns the highest value of a given set of numbers. High means the highest price of the day, and 9 means the 9 bars period.
@@ -118,7 +131,10 @@ It’s very similar to the line we just spend some time talking about.
 
 ### · Step Three: Plotting
 
-![](3.png)
+    //Step Three: Plotting
+    plot(k, color = color.green)
+    plot(d, color = color.red)
+    plot(j, color = color.black)
 
 (1) Now let’s plot what we just calculated.
 
