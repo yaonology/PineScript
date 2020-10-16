@@ -171,9 +171,9 @@ It’s very similar to the line we just spend some time talking about.
 
 (9) Also, we don’t need the long equals true part anymore, as we are selling, or shorting, not longing the stock any more.
 
-|  | **Net Profit | Precent Profitable | Profit Factor | Max Drawdown | 
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
 | --- | --- | ---| --- | --- |
-| KD Crossover and Crossunder | 15.96% | 72.73% | 1.369 | 26.98% |
+| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
 
 
 This is the historical cumulative result we get by applying KD strategy only to SPY data.
