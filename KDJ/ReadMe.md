@@ -191,8 +191,8 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 |  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
 | --- | --- | ---| --- | --- |
-| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
-| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
+| **KD Crossover and Crossunder** | 15.96% | 72.73% | 1.369 | 26.98% |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | 171.38% | 69.12% | 1.621 | 34.14% |
 
 (1) Now let’s combine our KD strategy and J strategy together
 
@@ -213,9 +213,9 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 |  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
 | --- | --- | ---| --- | --- |
-| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
-| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
-| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
+| **KD Crossover and Crossunder** | 15.96% | 72.73% | 1.369 | 26.98% |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | 171.38% | 69.12% | 1.621 | 34.14% |
+| **KD Against the Market** | 304.88% | 55.17% | 2.195 | 38.89% |
 
 (1) We may use KD strategy against the market.
 
@@ -248,10 +248,10 @@ This is the historical cumulative result we get by applying KD strategy only to 
 
 |  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
 | --- | --- | ---| --- | --- |
-| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
-| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
-| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
-| **KD Against the Market with J Crossover and Crossunder** | **425.83%** | **64.38%** | **2.132** | **51.63%** |
+| **KD Crossover and Crossunder** | 15.96% | 72.73% | 1.369 | 26.98% |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | 171.38% | 69.12% | 1.621 | 34.14% |
+| **KD Against the Market** | 304.88% | 55.17% | 2.195 | 38.89% |
+| **KD Against the Market with J Crossover and Crossunder** | 425.83% | 64.38% | 2.132 | 51.63% |
 
 We apply the same logic and combine j indicator. Again, the profit is even higher with three indicators combined and against the market
 
@@ -272,9 +272,9 @@ We apply the same logic and combine j indicator. Again, the profit is even highe
 
 |  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
 | --- | --- | ---| --- | --- |
-| **KD Crossover and Crossunder** | **15.96%** | **72.73%** | **1.369** | **26.98%** |
-| **KD Crossover and Crossunder with J Crossover and Crossunder** | **171.38%** | **69.12%** | **1.621** | **34.14%** |
-| **KD Against the Market** | **304.88%** | **55.17%** | **2.195** | **38.89%** |
-| **KD Against the Market with J Crossover and Crossunder** | **425.83%** | **64.38%** | **2.132** | **51.63%** |
-| **KD Against the Market with Bull Trend J Crossover and Crossunder** | **491.19%** | **66.27%** | **2.164** | **35.02%** |
+| **KD Crossover and Crossunder** | 15.96% | 72.73% | 1.369 | 26.98% |
+| **KD Crossover and Crossunder with J Crossover and Crossunder** | 171.38% | 69.12% | 1.621 | 34.14% |
+| **KD Against the Market** | 304.88% | 55.17% | 2.195 | 38.89% |
+| **KD Against the Market with J Crossover and Crossunder** | 425.83% | 64.38% | 2.132 | 51.63% |
+| **KD Against the Market with Bull Trend J Crossover and Crossunder** | 491.19% | 66.27% | 2.164 | 35.02% |
 
