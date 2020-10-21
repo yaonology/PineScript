@@ -31,7 +31,8 @@ Here, we take an example. If the highest price in the past 9 bars is $50, close 
 
 
 ![](KDJ/KDJ-momentum%20concept.png)
-! [] (1.png)
+
+![](1.png)
 
 Then, based on the rsv value, we can calculate K and D value
 
