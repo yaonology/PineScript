@@ -43,7 +43,7 @@ When the J is below 0, the stock price also might be oversold. During the overso
 
 When the K is over 100, the stock price might be overbought. During the overbought area, if the J crossunder 100, it’s also means the death-cross.
 
-Picture
+![GitHub Logo](/images/KDJ-momemtum concept.png)
 
 ## 3. KDJ Stochastic Oscillator Strategy
 
