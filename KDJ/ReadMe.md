@@ -44,7 +44,8 @@ When the J is below 0, the stock price also might be oversold. During the overso
 
 When the K is over 100, the stock price might be overbought. During the overbought area, if the J crossunder 100, it’s also means the death-cross.
 
-![GitHub Logo](/images/KDJ-momemtum concept.png)
+![](KD-Overbought-oversold.png)
+![](J-overbought-oversold.png)
 
 ## 3. KDJ Stochastic Oscillator Strategy
 
@@ -52,7 +53,7 @@ When the K is over 100, the stock price might be overbought. During the overboug
 
 We can use the crosses to identify the best time to enter or exit the market. When we observe a gold cross when K and D are in oversold area, we buy the stock as the price will rebound soon. On the other hand, when we see a death cross in overbought area, we sell the stock as the price has reached it peak and will drop soon
 
-Picture
+![](KD-crossover-crossunder.png)
 
 ### · J Crossover and Crossunder
 
@@ -60,7 +61,7 @@ We can also use J line to tell the oversold and overbought areas.
 When J line is below 0, the stock is oversold; when the line is above 100, the stock is overbought.
 When J crosses over 0 from below, we buy stock as the price will begin to rise soon; when J crosses 100 from above, we sell stock as the price will start to decrease.
 
-Picture
+![](J-crossover-crossunder.png)
 
 ## 4. Tradingview Pine Script
 
