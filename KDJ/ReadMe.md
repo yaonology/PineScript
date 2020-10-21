@@ -29,7 +29,8 @@ KD is the momentum indicator, K and D would be always between 0 and 100. J would
 
 Here, we take an example. If the highest price in the past 9 bars is $50, close price is $36, and the lowest price in the past 9 bars is $20, rsv would be 53.33
 
-Picture
+
+![Image of Yaktocat](https://github.com/yaonology/PineScript/KDJ-momemtum concept.png)
 
 Then, based on the rsv value, we can calculate K and D value
 
