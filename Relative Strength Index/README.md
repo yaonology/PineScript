@@ -169,3 +169,31 @@ Picture
 | **RSI Overbought and Oversold** | 105.66% | 85.11% | 2.129 | 39.13% |
 | **RSI Bull and Bear Zone** | 87.81% | 39.24% | 1.467 | 40.15% |
 
+#### RSI Against Market
+
+(1) Finally, let’s have a look at what happenes if we use an against market strategy.
+
+(2) In the overbought and oversold strategy, we buy the stock if RSI reaches the oversold area and sell the stock if the RSI reaches the overbought area. 
+
+(3) Now, we buy the stock if RSI leaves the overbought area and wait to sell the stock until RSI leaves the oversold area. 
+
+(4) The logic is that when RSI leaves the overbought area, it means the selling power is increasing to drive the price down. We buy the stock when the selling power is large enough to drag RSI out of the overbought area. But now the price may be high because more people are selling the stock in the market. Against the market, we buy the stock anyway.
+
+(5) Then, we wait even though RSI drops into the oversold area. We wait until the buying power is increasing high enough to drag RSI out of the oversold area when more people are buying the stock in the market. Here the stock price will reach a new high, which might be higher than our purchase price. Now, we can sell the stock.
+
+(6) Now, you will be surprised by a much higher net profit and a significant lower max drawdown of RSI against market strategy. 
+
+    //Step Four: Strategy Entry And Strategy Close
+    if (r > 70 and r[1] < 70)
+        strategy.entry(id = "rsi", long = true)
+        
+    if (r < 30 and r[1] > 30)
+        strategy.close(id = "rsi") 
+        
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **RSI Overbought and Oversold** | 105.66% | 85.11% | 2.129 | 39.13% |
+| **RSI Bull and Bear Zone** | 87.81% | 39.24% | 1.467 | 40.15% |        
+| **RSI Against the Market** | 164.42% | 68.18% | 3.856 | 8.62% | 
+
+
