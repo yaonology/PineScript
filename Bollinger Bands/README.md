@@ -175,6 +175,7 @@ a. Percent B Strategy
         strategy.close(id = "BB_buy")
 
 |                    | Net Profit | Percent Profitable | Profit Factor | Max Drawdown |
+| --------           | -----:     | :----:            |         :----: |      :----: |
 | Percent B Strategy |  397.27%   |        86.11%      |     3.306     |    34.37%    |     
 
 | 水果        | 价格    |  数量  |
