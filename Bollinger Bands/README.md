@@ -178,12 +178,6 @@ a. Percent B Strategy
 | --------           | -----:     | :----:            |         :----: |      :----: |
 | Percent B Strategy |  397.27%   |        86.11%      |     3.306     |    34.37%    |     
 
-| 水果        | 价格    |  数量  |
-| --------   | -----:   | :----: |
-| 香蕉        | $1      |   5    |
-| 苹果        | $1      |   6    |
-| 草莓        | $1      |   7    |
-
 b. Percent B Strategy with Long-term Simple Moving Average
 
 (1) The second strategy is combing Percent B Strategy with Long-term Simple Moving Average. If the previous Percent B is smaller than 0 and the percent B today is greater than 0 and the 200-day simple moving average is growing, we take it as a buying point.
