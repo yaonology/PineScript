@@ -3,11 +3,13 @@
 ### · Background & Formula
 
 RSI, short for Relative Strength Index, developed by Wells Wider in 1978, is based on the principle of supply and demand. 
+
 RSI  is an oscillator indicator. It compares buying and selling power based on the changes in stock prices over a specific period to determine future market trends and the intrinsic nature of stock prices. 
+
 RSI uses the average price increase to represent buying power based on the relationship between demand and price. Similarly, it uses the average price drop to represent selling power.
 
 Accordingly, the formula for RSI(N) equals (average of all closing price rises within N days / (average of all rises within N days + |average of all drops within N days|)) *100
-Note: All numbers are in absolute value
+  Note: All numbers are in absolute value
 
 RSI = 100 * Average Gain / (Average Loss + Average Gain)
 
