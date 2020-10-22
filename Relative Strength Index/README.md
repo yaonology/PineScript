@@ -93,4 +93,79 @@ Picture
     //Step One: Initial Setting
     //@version = 4
     Strategy("Yaonology RSI Indicators Tutorial", overlay=false, 
+    default_qty_type = strategy.precent_of_equity, default_qty_value = 100,
+    currency = currency.USD, initial_capital = 10000,
+    commission_type = strategy.commission.percent, commission_value = 0)
     
+### · Step Two: Parameter Setting
+(1) Step Two Parameter Setting is the step we set up the RSI parameter. 
+
+(2) By using the built-in function ‘rsi’ and indicating that we are using the closing price of the last 14 days, we can easily get the RSI indicators, which we label as ‘r’.
+
+     //Step Two: Parameter Setting
+     r = rsi(close, 14)
+     
+### · Step Three: Plotting
+
+(1) Now let’s plot what we just got.
+
+(2) Plot brackets r comma color equals color dot blue means we will be plotting RSI in blue.
+
+    //Step Three: Plotting
+    plot(r, color = color.blue)
+    
+### · Step Four: Strategy Entry and Strategy Close
+
+#### RSI Overbought and Oversold
+
+(1) In the previous section, we discussed in theory how to pick buying and selling points with RSI indicators using the overbought and oversold area. Here, we are replicating the strategy by pine script.
+
+(2) We use the if statements to tell the system when to buy and when to sell. If r is larger than 30 and the previous r is smaller than 30 are the conditions of buying the stock. 
+
+(3) When these conditions are met, we tell the system to buy stock. Strategy dot entry brackets id equals quote kd comma long equals true is the expression we use to buy the stock. Id equals quote kd means whenever a transaction happens there will be a small label called kd beside it.
+
+(4) Long equals true means we are buying the stock when the conditions above are met.
+
+(5) Remember, you must press tab before all lines to be executed by if statement.
+
+(6) Next, we define when to sell the stock. We sell when observing RSI crosses down in the overbought area, where r is smaller than 70 and the previous r is larger than 70.
+
+(7) Strategy dot close brackets id equals quote id means we are telling the system to sell the stock when conditions mentioned above are met. Again, we add a label called kd to each selling transaction. Remember, the id under buying instruction and selling instruction must match, otherwise there’ll be an error.
+
+(8) Also, we don’t need the long equals true part anymore, as we are selling, or shorting, not longing the stock any more.
+
+    //Step Four: Strategy Entry And Strategy Close
+    if (r > 30 and r[1] < 30)
+        strategy.entry(id = "kd", long = true)
+        
+    if (r < 70 and r[1] > 70)
+        strategy.close(id = "kd") 
+        
+ |  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **RSI Overbought and Oversold** | 105.66% | 85.11% | 2.129 | 39.13% |
+
+(9) This is the historical cumulative result we get by applying KD strategy only to SPY data.
+
+#### RSI Bull and Bear Zone
+
+(1) Now, let’s develop the RSI bull and bear trend strategy.
+
+(2) we now define our buying condition as the following: if we see RSI is larger than 60 and the previous RSI is smaller than 60, we buy the stock.
+
+(3) on the other hand, if we see RSI is smaller than 40 and the previous RSI is larger than 40, we sell the stock
+
+(4) By comparing the two strategies’ back-test results, we could see that RSI overbought and oversold strategy is better than the RSI bull and bear zone strategy!
+
+    //Step Four: Strategy Entry And Strategy Close
+    if (r > 60 and r[1] < 60)
+        strategy.entry(id = "kd", long = true)
+        
+    if (r < 40 and r[1] > 40)
+        strategy.close(id = "kd") 
+        
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **RSI Overbought and Oversold** | 105.66% | 85.11% | 2.129 | 39.13% |
+| **RSI Bull and Bear Zone** | 87.81% | 39.24% | 1.467 | 40.15% |
+
