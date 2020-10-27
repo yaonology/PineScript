@@ -28,8 +28,6 @@ When we are done grouping the 14 price changes, we sum up all the numbers and di
 
 Let’s say, we have an average gain of 1.0 and an average loss of 0.8. By applying the RSI formula, we get RSI=(1/(1+0.8))*100=55.55.
 
-Picture
-
 ### · Overbought and Oversold 
 
 Now, we have the RSI numbers, let’s see two sets of definitions which can help us judge the buy and sell points. First, overbought and oversold.
@@ -38,7 +36,7 @@ Normally, when RSI is higher than 70,  it is a good time to sell because the mar
 
 When RSI is lower than 30, it is a good time to buy because the market is in oversold status.
 
-Picture
+![](image/overbought_oversold.png)
 
 ### · Bull/Bear Trend
 
