@@ -46,7 +46,8 @@ When RSI is higher than 40, the market is in the bull market. In a bull market, 
 
 When RSI is lower than 60, the market is in the bear market. In a bear market, RSI tends to remain below 60, so 60 can be  seen as a resistance line.
 
-Picture
+![](image/bull_trend.png)
+![](image/bear_trend.png)
 
 ## 3. Relative Strength Index Strategy
 
@@ -58,7 +59,7 @@ First, when we observe RSI is in the oversold area, which indicates the prices a
 
 After we are in the market, we need to find the selling point. While the first time that RSI crosses over 70 from bottom is not a good point since RSI just reaches the overbought area, a better selling point is when RSI crosses down 70 from overbought area where the selling price could be high.
 
-Picture
+![](image/strategy_overbout_oversold.png)
 
 ### · Bull/Bear Trend
 
@@ -68,7 +69,8 @@ We have introduced the resistance line, so we know if RSI reaches 60 and remains
 
 After price increases to some degree, it would begin to drop and so would RSI. Here the 40 support line could help us determine the selling point. When RSI drops below 40, the selling power in the market is larger than the buying power, so we could predicate a price drop of the asset, followed by the bear trend. Thus, we have a good selling point when RSI crosses down 40.
 
-Picture
+
+![](image/strategy_bull_bear_trend.png)
 
 ## 4. Tradingview Pine Script (Screen recording)
 
