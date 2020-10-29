@@ -1,3 +1,5 @@
+[![Bollinger Bands PineScript TradingView Code-along Tutorial | Trading Algorithm](https://res.cloudinary.com/marcomontalbano/image/upload/v1603944020/video_to_markdown/images/youtube--entlmZFUEtA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=entlmZFUEtA&feature=youtu.be "Bollinger Bands PineScript TradingView Code-along Tutorial | Trading Algorithm")
+
 # Best Way to Use Bollinger Bands as Trading Strategies
 Bollinger Bands are a type of statistical chart characterizing the prices and volatility over time of a financial instrument or commodity. Bollinger Bands provide a relative definition of high and low prices of a market, which can contribute to rigorous pattern recognition and is useful in comparing price actions and indicator actions to achieve systematic trading decisions. 
 
