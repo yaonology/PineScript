@@ -176,9 +176,9 @@ a. Percent B Strategy
     if pb[1] > 100 and pb < 100
         strategy.close(id = "BB_buy")
 
-|                    | Net Profit | Percent Profitable | Profit Factor | Max Drawdown |
-| --------           | -----:     | :----:            |         :----: |      :----: |
-| Percent B Strategy |  397.27%   |        86.11%      |     3.306     |    34.37%    |     
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **Percent B Strategy** | 397.27% | 86.11% | 3.306 | 34.37% |
 
 b. Percent B Strategy with Long-term Simple Moving Average
 
@@ -206,8 +206,10 @@ c. Percent B and Middle-term/Long-term Simple Moving Average Strategy
     if clp > upr and sma(close, 200) > sma(close, 60)
         strategy.close(id = "BOLL1")
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Strategies_Outcome_Comparison.png)
-
-
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **Percent B Strategy** | 397.27% | 86.11% | 3.306 | 34.37% |
+| **Percent B with Long-term SMA** | 474.74% | 90.91% | 12.856 | 13.96% |
+| **Percent B with Long/Mid-term SMA** | 717.4% | 80% | 32.317 | 5.42% |
 
 
