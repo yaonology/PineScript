@@ -1,5 +1,5 @@
 //@version=4
-study("Correaltion Coefficient")
+study("Correlation Coefficient")
 
 length = input(title = "period", type=input.integer, defval=120)            // Set the number of bars back
 symbolName = input(title="Symbol", type = input.symbol, defval= "AMEX:SPY") // Get the other stock's name that we want to compare
