@@ -100,9 +100,10 @@ When the short-term simple moving average crosses under the long-term simple mov
 
 (7) Finally, we set up the commission fee. Here, we code “commission_type equals strategy.commission.percent” and “commission_value = 0”, which means that we use the percentage type to calculate the commission fee, and here we set up 0% commission fee because most brokers don’t charge the commission fee currently.
 
+    //@version=4
     //Step One: Initial Setting
-    //@version = 4
-    strategy("Yaonology Moving Average Tutoring", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commision_value = 0)
+    strategy("Yaonology Moving Average Tutorial", overlay = true, currency = currency.USD, initial_capital = 10000, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, commission_type = strategy.commission.percent, commission_value = 0)
+
 
 Then, we will try these three algorithms in pine script and do the backtesting.
 
