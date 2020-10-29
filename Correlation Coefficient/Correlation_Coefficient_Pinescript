@@ -1,7 +1,9 @@
 //@version=4
 study("Correaltion Coefficient")
+
 length = input(title = "period", type=input.integer, defval=120)
 symbolName = input(title="Symbol", type = input.symbol, defval= "AMEX:SPY")
 symbolClose = security(symbolName, "D", close)
 cc = correlation(symbolClose, close, length)
+
 plot(cc)
