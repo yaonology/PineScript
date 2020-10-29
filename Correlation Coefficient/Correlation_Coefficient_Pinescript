@@ -1,9 +1,9 @@
 //@version=4
 study("Correaltion Coefficient")
 
-length = input(title = "period", type=input.integer, defval=120)
-symbolName = input(title="Symbol", type = input.symbol, defval= "AMEX:SPY")
-symbolClose = security(symbolName, "D", close)
-cc = correlation(symbolClose, close, length)
+length = input(title = "period", type=input.integer, defval=120)            // Set the number of bars back
+symbolName = input(title="Symbol", type = input.symbol, defval= "AMEX:SPY") // Get the other stock's name that we want to compare
+symbolClose = security(symbolName, "D", close)                              // Get the close price of the other stock
+cc = correlation(symbolClose, close, length)                                // Calculate Correlation Coefficient
 
 plot(cc)
