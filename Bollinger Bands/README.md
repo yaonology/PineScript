@@ -11,7 +11,7 @@ Bollinger Bands are a technical analysis tool developed by John Bollinger in the
 
 There are three lines that compose Bollinger Bands: A simple moving average (middle band) and an upper and lower band. By default, the middle band is the simple moving average of the past 20 days. The upper and the lower bands are 2 standard deviations from the middle band.
  
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Upper_Middle_Lower.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Upper_Middle_Lower.png)
  
 The purpose of Bollinger Bands is to provide a relative definition of high and low prices of a market. Prices are relatively high at the upper band and low at the lower band. There are several uses for Bollinger Bands, such as determining overbought and oversold levels, as a trend following tool, and for monitoring for breakouts.
 
@@ -26,8 +26,8 @@ If the stock price is higher than the upper band, it is a 2.275% possibility. wh
 
 On the other hand, If the stock price is lower than the lower band, it is a 2.5% possibility, which means that the stock price might be oversold.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Normal_Distribution.png =400x300)
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Probability.png =400x300)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Normal_Distribution.png =400x)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Probability.png =400x)
 
 #### · Bollinger Band Percent B
 
@@ -43,7 +43,7 @@ If the close price is equal to the 20-day moving average, percent B is 50. In th
 
 If the close price is lower than the lower band, percent B would be lower than 0. In this case, the stock price is oversold.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Percent_B.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Percent_B.png)
 
 #### · Bollinger Band Width
 
@@ -57,7 +57,7 @@ On the other hand, when the stock price volatility decreases, the difference bet
 
 When the distance between the two bands is relatively narrow that is often a sign that there is no bull or bear trend.
  
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Width.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Width.png)
  
 The Bollinger Band Width can show the strength of the trend but cannot determine whether it is a bull or a bear trend.
 
@@ -68,14 +68,14 @@ The Bollinger Band Width can show the strength of the trend but cannot determine
 
 (2) The previous percent B is above 100% and today the percent B is back below 100%, which means that the stock price is overbought, and the market investors start to sell. Then, we sell the equity.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Strategy_Percent_B.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Strategy_Percent_B.png)
 
 #### · Percent B and Long-term Simple Moving Average
 (1) The second strategy is combining percent B with Simple Moving Average. The previous percent B is below 0 and today the percent B is back above 0, which means that the stock price is oversold, and the market investors start to buy back. Also, the stock price is still in the long-term bull, 200-day simple moving average is still moving up. We buy the equity.
 
 (2) The previous percent B is above 100% and today the percent B is back below 100%, which means that the stock price is overbought, and the market investors start to sell. Then, we sell the equity.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Bollinger_Bands_Strategy_Percent_B_and_SMA.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Strategy_Percent_B_and_SMA.png)
 
 ### 4. Pine Script Examples
 #### · Initial Setting
