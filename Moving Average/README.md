@@ -36,11 +36,11 @@ Simply put, when the simple moving average is going up, we can say that market i
 
 Bull Trend:
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/bull_trend.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/Pictures/bull_trend.png)
 
 Bear Trend:
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/bear_trend.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/Pictures/bear_trend.png)
 
 However, we need to point out the Simple Moving Average is a lagging indicator, which means the indicator helps us determine the trend after the price changes. Thus, the indicator mainly helps us in validating the trend, not predicting the trend.
 
@@ -49,11 +49,11 @@ However, we need to point out the Simple Moving Average is a lagging indicator, 
 Simple Moving Average can also be seen as a support line or resistance line.
 During the bull trend, if the close price drops close to the simple moving average, the simple moving average can be seen as a support line that the stock price will rebound after touching the support line.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/support_line_example.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/Pictures/support_line_example.png)
 
 On the other hand, if the close price rebounds close to the simple moving average in the bear trend, the simple moving average can be seen as a resistance line, and the stock price will drop after touching the resistance line.
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/resistant_line_example.png)
+![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/Pictures/resistant_line_example.png)
 
 #### · Create strategies
 
@@ -125,7 +125,9 @@ a. Close price above/below Simple Moving Average
     if ma_fast > close
         strategy.close(id = "ma_long")
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_a.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **Close price above/below Simple Moving Average** | 107.49% | 35.25% | 1.237 | 32.34% |
 
 b. Short-term/Middle-term Simple Moving Average Crosses
 
