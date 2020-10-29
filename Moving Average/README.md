@@ -147,7 +147,9 @@ b. Short-term/Middle-term Simple Moving Average Crosses
     if ma_slow > ma_fast
         strategy.close(id = "ma_long")
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_b.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **Short-term/Middle-term Simple Moving Average Crosses** | 72.72% | 42.05% | 1.307 | 43.35% |
 
 c. Short-term/Middle-term Simple Moving Average Cross and Long-term Simple Moving Average is on the long-term bull trend
 
@@ -173,4 +175,6 @@ c. Short-term/Middle-term Simple Moving Average Cross and Long-term Simple Movin
     if ma_slow > ma_fast
         strategy.close(id = "ma_long")
 
-![Image of Yaktocat](https://github.com/yaonology/PineScript/blob/master/Moving%20Average/overview_algorithm_c.png)
+|  | **Net Profit** | **Precent Profitable** | **Profit Factor** | **Max Drawdown** | 
+| --- | --- | ---| --- | --- |
+| **Short-term/Middle-term Simple Moving Average Cross and Long-term SMA on the long-term bull trend** | 81.25% | 43.21% | 1.363 | 36.2% |
