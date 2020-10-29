@@ -23,7 +23,7 @@ One of the most commonly used formulas in stats is Pearson’s correlation coeff
 
 ```
 //@version=4
-study("Correaltion Coefficient")
+study("Correlation Coefficient")
 ```
 
 #### · Parameter Setting 
