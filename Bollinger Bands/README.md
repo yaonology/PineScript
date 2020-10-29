@@ -26,8 +26,10 @@ If the stock price is higher than the upper band, it is a 2.275% possibility. wh
 
 On the other hand, If the stock price is lower than the lower band, it is a 2.5% possibility, which means that the stock price might be oversold.
 
-<img src="https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Normal_Distribution.png" width="400" height="300" />
-<img src="https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Probability.png" width="400" height="300" />
+<p float="left">
+    <img src="https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Normal_Distribution.png" width="400" height="300" />
+    <img src="https://github.com/yaonology/PineScript/blob/master/Bollinger%20Bands/Pictures/Bollinger_Bands_Probability.png" width="400" height="300" />
+</p>
 
 #### · Bollinger Band Percent B
 
