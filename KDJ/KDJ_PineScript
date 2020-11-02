@@ -23,48 +23,48 @@ hline(20, color = color.green, linestyle = hline.style_dashed. linewidth = 1)
 //Step Four: Strategy Entry and Strategy Close
 
 //Strategy One: KD Crossover under 20 and Crossunder over 80
-//if (k < 20 and d < 20 and k > d and k[1] < d[1])
-//    strategy.entry(id= "kd", long = true)
-    
-//if (k > 80 and d > 80 and k < d and k[1] > d[1])
-//    strategy.close(id= "kd")
-
-//Strategy Two: KD Crossover and Crossunder and J Corssover and Crossunder
-//if (k < 20 and d < 20 and k > d and k[1] < d[1]) or (j > 0 and j[1] < 0)
+if (k < 20 and d < 20 and k > d and k[1] < d[1])
     strategy.entry(id= "kd", long = true)
     
-//if (k > 80 and d > 80 and k < d and k[1] > d[1]) or (j < 100 and j[1] > 100)
+if (k > 80 and d > 80 and k < d and k[1] > d[1])
+    strategy.close(id= "kd")
+
+//Strategy Two: KD Crossover and Crossunder and J Corssover and Crossunder
+if (k < 20 and d < 20 and k > d and k[1] < d[1]) or (j > 0 and j[1] < 0)
+    strategy.entry(id= "kd", long = true)
+    
+if (k > 80 and d > 80 and k < d and k[1] > d[1]) or (j < 100 and j[1] > 100)
     strategy.close(id= "kd")
     
 //Strategy Three: KD Against the Market - Buy above 80 and sell below 20
-//if (k > 80 and d > 80)
-//    strategy.entry(id= "kd", long = true)
+if (k > 80 and d > 80)
+    strategy.entry(id= "kd", long = true)
     
-//if (k < 20 and d < 20)
-//    strategy.close(id= "kd")
+if (k < 20 and d < 20)
+    strategy.close(id= "kd")
 
 //Strategy Four: KD Against the Market with J crossover and crossunder
-//if (k > 80 and d > 80)
-//    strategy.entry(id= "kd", long = true)
+if (k > 80 and d > 80)
+    strategy.entry(id= "kd", long = true)
     
-//if (k < 20 and d < 20)
-//    strategy.close(id= "kd")
+if (k < 20 and d < 20)
+    strategy.close(id= "kd")
     
-//if (j > 0 and j[1] < 0)
-//    strategy.entry(id= "j", long = true)
+if (j > 0 and j[1] < 0)
+    strategy.entry(id= "j", long = true)
     
-//if (j < 100 and j[1] > 100)
-//    strategy.close(id= "j")
+if (j < 100 and j[1] > 100)
+    strategy.close(id= "j")
 
 //Strategy Five: KD Against the Market in the Long-term Bull Trend (200-SMA) with J crossover and crossunder
-//if (k > 80 and d > 80) and sma(close, 200) > sma(close, 200)[1]
-//    strategy.entry(id= "kd", long = true)
+if (k > 80 and d > 80) and sma(close, 200) > sma(close, 200)[1]
+    strategy.entry(id= "kd", long = true)
     
-//if (k < 20 and d < 20)
-//    strategy.close(id= "kd")
+if (k < 20 and d < 20)
+    strategy.close(id= "kd")
     
-//if (j > 0 and j[1] < 0)
-//    strategy.entry(id= "j", long = true)
+if (j > 0 and j[1] < 0)
+    strategy.entry(id= "j", long = true)
     
-//if (j < 100 and j[1] > 100)
-//    strategy.close(id= "j")
+if (j < 100 and j[1] > 100)
+    strategy.close(id= "j")
