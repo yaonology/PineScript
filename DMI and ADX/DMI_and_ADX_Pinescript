@@ -1,1 +1,26 @@
+//version = 4
+//Step One: Initial Setting
+strategy("Yaonology DMI and ADX Indicators Tutorial", overlay=false, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, currency = currency.USD, initial_capital = 10000, commission_type = strategy.commission.percent, commission_value = 0)
 
+//Step Two: Parameter Setting
+[diplus,diminus,adx] = dmi(14,14)
+
+//Step Three: Plotting
+plot(diplus, color = color.green)
+plot(diminus, color = color.red)
+plot(adx, color = color.black)
+
+//Step Four: Strategy Entry and Strategy Close
+//DMI Strategy
+if crossover(diplus, diminus)
+  strategy.entry("dmi", long = true)
+  
+if crossunder(diplus, diminus)
+  strategy.close("dmi")
+
+//ADX and DMI Strategy
+if diplus > diminus and adx > 15 and adx > adx[1]
+  strategy.entry("dmi", long = true)
+
+if diplus < diminus
+  strategy.close("dmi")
