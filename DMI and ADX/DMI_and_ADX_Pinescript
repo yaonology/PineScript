@@ -24,3 +24,7 @@ if diplus > diminus and adx > 15 and adx > adx[1]
 
 if diplus < diminus
   strategy.close("dmi")
+
+
+
+
